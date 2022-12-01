@@ -25,22 +25,22 @@
   font-size: 24px;
 }
 
-.Name_info {
-  width: 80%;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-  text-align: left;
-}
-
 .More_info {
-  width: 80%;
+  width: 327px;
+  height: 146px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  text-align: left;
+}
+
+.Name_info {
+  width: 327px;
+  height: 150px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
 }
 
 .connect {
@@ -68,13 +68,3 @@
   background-repeat: no-repeat;
   position: relative;
 }
-
-/* .container {
-    background-image: url(Images/header-shapes\ mobile@2x.png);
-    background-repeat: no-repeat;
-    height: 587.1460571289062px;
-    width: 462px;
-    left: -34px;
-    top: 103.9993896484375px;
-    border-radius: 0px;
-  } */

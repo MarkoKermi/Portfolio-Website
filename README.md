@@ -53,16 +53,16 @@ After you're finished please remove all the comments and instructions!
 
 > In this project, you will set up a Portfolio web page.
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="HTML_and_CSS"></a>
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+### Key Features <a name="using_Figma_Template"></a>
 
 - **[Linters]**
-> A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs
+  > A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs
 - **[.gitignore]**
->Specifies intentionally untracked files to ignore
+  > Specifies intentionally untracked files to ignore
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
