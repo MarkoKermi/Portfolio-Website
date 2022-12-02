@@ -89,7 +89,7 @@ Example commands:
 --->
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **Author**
 

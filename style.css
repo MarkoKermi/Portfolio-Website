@@ -23,6 +23,7 @@
   padding-left: 0%;
   list-style: none;
   font-size: 24px;
+  color: #172b4d;
 }
 
 .More_info {
@@ -31,7 +32,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #344563;
+  color: blue;
 }
 
 .Name_info {
@@ -45,7 +46,6 @@
 
 .connect {
   color: #6070ff;
-  font-style: italic;
 }
 
 .top {
