@@ -27,12 +27,13 @@ body {
 
 .media_links {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   gap: 20px;
   padding-left: 0%;
   list-style: none;
   font-size: 24px;
   color: #172b4d;
+  align-items: center;
 }
 
 .More_info {
@@ -42,6 +43,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: blue;
+  font-family: "popins";
 }
 
 .Name_info {
@@ -133,13 +135,14 @@ body {
   gap: 8px;
 }
 
-.link {
+.link:hover {
   background-color: #ebebff;
   font-size: 12px;
   color: #6070ff;
   border: none;
   border-radius: 8px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .more {
@@ -147,12 +150,13 @@ body {
   line-height: 24px;
   font-size: 17px;
   padding: 2% 5%;
-  color: #396df2;
+  color: white;
   border-radius: 8px;
   border: 1px solid #396df2;
-  background-color: white;
+  background-color: #396df2;
   margin-top: 5%;
   margin-bottom: 2%;
+  cursor: pointer;
 }
 
 /* Portfolio section about myself */
@@ -164,7 +168,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  text-align: left;
+  /* text-align: left; */
   padding-bottom: 3rem;
 }
 
@@ -175,7 +179,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  text-align: left;
+  /* text-align: left; */
   margin-bottom: 5%;
 }
 
@@ -186,6 +190,7 @@ body {
   list-style: none;
   margin-top: 1rem;
   font-size: 24px;
+  align-items: center;
 }
 
 .fa {
@@ -208,10 +213,13 @@ body {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: center;
   margin-bottom: 10%;
   padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dropdownMenu {
@@ -220,10 +228,11 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 30px;
-  align-items: flex-start;
+  align-items: ce;
   justify-content: space-between;
   margin: 20px 0;
   list-style: none;
+  align-items: center;
 }
 
 .frame {
