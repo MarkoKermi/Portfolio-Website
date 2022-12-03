@@ -128,7 +128,7 @@ body {
 
 .linkButtons {
   display: flex;
-  padding: 4px 0px;
+  padding: 4px 0;
   justify-content: flex-start;
   gap: 8px;
 }
@@ -140,22 +140,22 @@ body {
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  font: inherit;
 }
 
 .more {
-  size: 17px;
+  size: 20px;
   line-height: 24px;
   font-size: 17px;
+  padding: 2% 5%;
   color: #396df2;
   border-radius: 8px;
   border: 1px solid #396df2;
   background-color: white;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
-/* 
-Portfolio section about myself
-*/
+/* Portfolio section about myself */
 
 .entryName {
   height: auto;
@@ -190,19 +190,6 @@ Portfolio section about myself
 
 .fa {
   color: #505f79;
-}
-
-.more {
-  size: 20px;
-  line-height: 24px;
-  font-size: 17px;
-  padding: 2% 5%;
-  color: #396df2;
-  border-radius: 8px;
-  border: 1px solid #396df2;
-  background-color: white;
-  margin-top: 5%;
-  margin-bottom: 2%;
 }
 
 .let_sconnect {
