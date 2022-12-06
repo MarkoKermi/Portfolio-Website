@@ -251,13 +251,23 @@
     you need built or a project that needs cooding. I'd love to help with it.
       </p>
     </div>       
-    <section class="inputButons">
-      <textarea>MarkoKermichiev</textarea>
-      <br>
-      <textarea>kermichievmarko@gmail.com</textarea>
-      <br>
-      <input id="textarea" type="textarea" placeholder="Write your message here" required="" />        
-  </section>
+    <form class="inputButons" action="https://formspree.io/f/xyyvrwnd" method="POST">
+      <input  type="text" 
+              name="name" 
+              placeholder="add your name" 
+              required maxlength="30">
+      <input
+              type="email"
+              name="email"
+              required
+              placeholder="Add your e-mail"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+      <textarea type="textarea" 
+                name="information_place" 
+                placeholder="Write your message here" 
+                required maxlength="500"></textarea>          
+  </form>
   <button class="more" id="get">Get It Touch</button>
 </div>
 </section>

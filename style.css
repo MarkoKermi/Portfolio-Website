@@ -319,7 +319,7 @@ body {
 }
 
 .background_image {
-  width: 327px;
+  /* width: 327px; */
   height: auto;
   border-top-left-radius: 80px;
   display: flex;
@@ -328,7 +328,9 @@ body {
   align-content: center;
   background-color: #6070ff;
   background-image: url(Images/header-shapes\ mobile@2x.png);
-  background-size: 100%;
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-position: top right;
   padding: 0%;
 }
 
