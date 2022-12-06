@@ -352,7 +352,6 @@ textarea {
   align-content: center;
   background-color: #6070ff;
   background-image: url(Images/header-shapes\ mobile@2x.png);
-  /* background-size: 100%; */
   background-repeat: no-repeat;
   background-position: top right;
   padding: 0%;
@@ -369,7 +368,6 @@ textarea {
 }
 
 .info_plus {
-  width: 70%;
   height: auto;
   font-weight: 400;
   font-size: 20px;
