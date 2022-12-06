@@ -380,25 +380,20 @@ textarea {
   width: 100%;
 }
 
-/*textarea {
-  margin-left: 5%;
-  display: inline-block;
-  width: 90%;
-  height: 2rem;
-  font-size: 17px;
-}*/
-
-/*#textarea {
-  margin-left: 5%;
-  width: 90%;
-  height: 8rem;
-  justify-self: start;
-}*/
-
-/*input {
-  justify-self: start;
-}*/
-
 #get {
   width: 130px;
+}
+
+.black_line {
+  display: flex;
+  justify-content: center;
+}
+
+.black_line > div {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
