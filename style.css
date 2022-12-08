@@ -90,6 +90,7 @@ textarea {
   background-color: purple;
   color: transparent;
   overflow: hidden;
+  justify-content: space-between;
 }
 
 .media_links {
@@ -143,6 +144,9 @@ textarea {
   grid-template: repeat (4, 1fr) /1fr;
   gap: 114px;
   padding: 114px 24px;
+  background-color: #e5e5e5;
+  
+
 }
 
 /* .mainContainer {
@@ -175,12 +179,18 @@ textarea {
 .info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  /* width: 100%; */
+  gap: 12px;
+}
+
+.snap_s {
   width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .snap_s > img {
-  /* width: 295px; */
-  /* height: 220px; */
   width: 100%;
 }
 
@@ -543,19 +553,22 @@ textarea {
     padding-left: 142px;
     padding-right: 142px; */
   }
+  
+  .mainContainer:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 
-  .snap_s > img {
-    /* width: 295px; */
-    /* height: 220px; */
-    width: 100%;
+
+  .snap_s  {
+    width: 50%;
   }
 
 
 .info {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* align-items: flex-start; */
-  width: 100%;
+  width: 50%;
 }
   /* height: auto;
     background-color: var(--white);
