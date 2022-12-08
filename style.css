@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: var(--background); */
+  background-color: #e5e5e5;
 }
 
 header {
@@ -336,9 +336,9 @@ textarea {
 .entry {
   width: 90%;
   height: auto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  /* font-weight: 400; */
+  font-size: 20px;
+  line-height: 28px;
   color: #344563;
   margin-bottom: 5%;
 }
@@ -376,7 +376,7 @@ textarea {
 
 .mainContainerAboutmyself {
   box-sizing: border-box;
-  width: 327px;
+  width: 100%;
   height: auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -425,7 +425,7 @@ textarea {
 
 .dropdownButtons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   width: 80%;
   height: auto;
@@ -536,6 +536,7 @@ textarea {
     padding: 114px 24px 150px 24px;
     align-items: flex-start;
     gap: 12px;
+    border-bottom-left-radius: 80px;
   }
 
   .container > background-image {
@@ -568,6 +569,13 @@ textarea {
   display: none;
 }
 
+
+.secondPart {
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+}
+
 .mainContainer {
   height: auto;
   border: 1px solid #dfe1e6;
@@ -579,7 +587,10 @@ textarea {
   padding: 40px;
   gap: 50px;
   margin: 0 10px;
-  width: 80%;
+  width: 150%;
+  /* justify-content: center;
+  justify-items: center; */
+  
 }
 
 .mainContainer:nth-child(even) {
@@ -603,15 +614,32 @@ textarea {
   box-sizing: inherit;
   border: 1px solid #dfe1e6;
   display: flex;
-  text-align: center;
+  text-align: left;
   align-items: center;
   padding: 142px 260px;
   flex-direction: row;
   border-top-right-radius: 120px;
   gap: 40px;
   background-color: white;
+  width: 100%;
 }
 
 .entry_info {
-  width: 40%;
+  width: 60%;
+  height: auto;
+  padding: 0;
 }
+
+/* .Personal_info {
+  display: flex;
+  justify-items: center;
+}
+
+.More_info {
+  width: 100%;
+  margin-right: 0;
+}
+
+#get {
+  margin-left: 25%;
+} */
