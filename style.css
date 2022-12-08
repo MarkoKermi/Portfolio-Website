@@ -4,12 +4,31 @@
   font-family: sans-serif;
   padding: 0%;
   box-sizing: border-box;
-  margin: 0%;
+  /* background-color: #0d151e; */
+  /* margin: 0%; */
 }
 
-body {
+/* body {
   width: 100vw;
   height: auto;
+} */
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--background); */
+}
+
+header {
+  display: flex;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: white;
+  padding-top: 58px ;
 }
 
 form {
@@ -36,6 +55,10 @@ textarea {
   height: 170px;
 }
 
+.Personal_info {
+  padding-top: 148px ;
+}
+
 .menu_line {
   width: 35px;
   height: 5px;
@@ -49,10 +72,30 @@ textarea {
   font-size: 20px;
 }
 
+.menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu > div {
+  width: 16px;
+  height: 2px;
+  background-color: purple;
+  color: transparent;
+  overflow: hidden;
+}
+
 .media_links {
   display: flex;
   gap: 20px;
-  padding-left: 0%;
+  /* padding-left: 0%; */
   list-style: none;
   font-size: 24px;
   color: #172b4d;
@@ -60,17 +103,18 @@ textarea {
 }
 
 .More_info {
-  width: 327px;
-  height: 146px;
+  width: 80%;
+  height: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: blue;
+  align-items: center;
 }
 
 .Name_info {
-  width: 327px;
-  height: 150px;
+  width: 80%;
+  height: auto;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -81,30 +125,24 @@ textarea {
   color: #6070ff;
 }
 
-.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 375px;
-}
-
 .container {
-  max-width: 390px;
-  height: 100vh;
+  max-width: 100%;
+  height: auto;
   background-image: url(Images/header-shapes\ mobile@2x.png);
-  background-size: contain;
-  background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  background-color: white;
+  background-size: cover;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /*  Portfolio setup and mobile */
 
 .secondPart {
   display: grid;
-  grid-template-rows: 4, 1fr;
-  row-gap: 5rem;
+  grid-template: repeat (4, 1fr) /1fr;
+  gap: 114px;
+  padding: 114px 24px;
 }
 
 .mainContainer {
@@ -396,3 +434,68 @@ textarea {
   margin-top: 32px;
   margin-bottom: 8px;
 }
+
+@media screen and (min-width: 738px) {
+  * {
+    font-family: sans-serif;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+  }
+
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  header {
+    padding: 30px 155px;
+  }
+
+  .container {
+  background-image: url(Images/Background\ img\ Desktop.png);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 114px 24px 150px 24px;
+  align-items: flex-start;
+  gap: 12px;
+  }
+
+  .container > background-image {
+    border-bottom-left-radius: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .Personal_info {
+    padding-left: 20%;
+    align-self: center;
+    padding-top: 15%;
+    width: 80%;
+  }
+
+  .menu {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .menu > div {
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: transparent;
+    font-size: 15px;
+    color: #344563;
+  }
+
+  .menu > img {
+    display: none;
+  }
