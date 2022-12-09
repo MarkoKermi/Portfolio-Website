@@ -1,7 +1,8 @@
 /* <!-- Portfolio  Setup and mobile first--> */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
 
 * {
-  font-family: sans-serif;
+  font-family: "Popins", sans-serif;
   padding: 0%;
   box-sizing: border-box;
 }
@@ -148,6 +149,7 @@ textarea {
   align-items: flex-start;
   padding: 16px 16px 0 16px;
   gap: 12px;
+  color: #344563;
 }
 
 .info {
@@ -246,10 +248,10 @@ textarea {
   size: 20px;
   width: 100px;
   line-height: 24px;
-  font-size: 17px;
-  padding: 2% 5%;
+  font-size: 174x;
+  padding: 5px;
   color: #396df2;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid #396df2;
   margin-top: 5%;
   margin-bottom: 2%;
@@ -257,16 +259,9 @@ textarea {
 }
 
 .more:hover {
-  size: 20px;
-  line-height: 24px;
-  font-size: 17px;
-  padding: 2% 5%;
   color: white;
-  border-radius: 8px;
   border: 1px solid #396df2;
-  background-color: #a1aaf6;
-  margin-top: 5%;
-  margin-bottom: 2%;
+  background: #4053fc;
   cursor: pointer;
 }
 
@@ -360,7 +355,7 @@ textarea {
 }
 
 .lng {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: flex;
   font-size: 20px;
@@ -374,7 +369,6 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  width: 80%;
   height: auto;
 }
 
@@ -383,8 +377,8 @@ textarea {
   border-radius: 8px;
   box-sizing: border-box;
   width: 70%;
-  height: 66px;
-  display: flex;
+  display: block;
+  padding: 0 10px;
   font-size: 15px;
   align-items: center;
   justify-content: flex-start;
@@ -447,6 +441,13 @@ textarea {
   cursor: pointer;
 }
 
+#get:hover {
+  color: white;
+  border: 1px solid #396df2;
+  background: #4053fc;
+  cursor: pointer;
+}
+
 .black_line {
   display: flex;
   justify-content: center;
@@ -463,7 +464,6 @@ textarea {
 
 @media screen and (min-width: 800px) {
   * {
-    font-family: sans-serif;
     padding: 0%;
     box-sizing: border-box;
   }
@@ -573,23 +573,13 @@ textarea {
     padding-bottom: 10%;
   }
 
-  .lng {
-    width: 80%;
-    height: auto;
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 1rem;
-  }
-
   .frame {
-    width: 80%;
+    width: 100%;
     height: auto;
     display: flex;
     font-size: 20px;
     justify-content: space-between;
+    text-align: center;
     gap: 20px;
     padding: 5% 0;
     border-bottom: 1px solid #dfe1e6;
