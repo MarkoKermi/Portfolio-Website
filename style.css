@@ -48,9 +48,11 @@ textarea {
   resize: none;
   height: 170px;
 }
+
 .background_img {
   background-color: #e5e5e5;
 }
+
 .headline {
   background-image: url(Images/header-shapes\ mobile@2x.png);
   background-repeat: no-repeat;
@@ -179,10 +181,6 @@ textarea {
 
 .ddb {
   list-style: none;
-}
-
-.snap_s {
-  width: 100%;
 }
 
 .name {
@@ -546,7 +544,7 @@ textarea {
     display: flex;
     text-align: left;
     align-items: center;
-    padding: 142px 185px 0px 142px;
+    padding: 142px 185px 0 142px;
     flex-direction: row;
     border-top-right-radius: 120px;
     gap: 40px;
