@@ -1,15 +1,29 @@
 /* <!-- Portfolio  Setup and mobile first--> */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
 
 * {
-  font-family: sans-serif;
+  font-family: "Popins", sans-serif;
   padding: 0%;
   box-sizing: border-box;
-  margin: 0%;
 }
 
+html,
 body {
   width: 100vw;
   height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: white;
+  padding-top: 58px;
 }
 
 form {
@@ -36,11 +50,25 @@ textarea {
   height: 170px;
 }
 
-.menu_line {
-  width: 35px;
-  height: 5px;
-  background-color: #6070ff;
-  margin: 6px 0;
+.background_img {
+  background-color: #e5e5e5;
+}
+
+.headline {
+  background-image: url(Images/header-shapes\ mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: white;
+  border-bottom-left-radius: 80px;
+  padding: 148px 20px 20px 20px;
+}
+
+.top {
+  width: 95vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -49,10 +77,19 @@ textarea {
   font-size: 20px;
 }
 
+.menu {
+  width: 18px;
+  height: 12px;
+  align-items: center;
+}
+
+.menu > ul {
+  display: none;
+}
+
 .media_links {
   display: flex;
   gap: 20px;
-  padding-left: 0%;
   list-style: none;
   font-size: 24px;
   color: #172b4d;
@@ -60,17 +97,17 @@ textarea {
 }
 
 .More_info {
-  width: 327px;
-  height: 146px;
+  width: 80%;
+  height: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: blue;
+  color: #172b4d;
+  align-items: center;
+  font-family: sans-serif;
 }
 
 .Name_info {
-  width: 327px;
-  height: 150px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -79,23 +116,15 @@ textarea {
 
 .connect {
   color: #6070ff;
-}
-
-.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 375px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10%;
 }
 
 .container {
-  max-width: 390px;
-  height: 100vh;
-  background-image: url(Images/header-shapes\ mobile@2x.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+  width: 100vw;
+  height: auto;
   background-color: white;
 }
 
@@ -103,21 +132,41 @@ textarea {
 
 .secondPart {
   display: grid;
-  grid-template-rows: 4, 1fr;
-  row-gap: 5rem;
+  grid-template: repeat (4, 1fr) /1fr;
+  gap: 114px;
+  padding: 114px 24px;
+  background-color: #e5e5e5;
 }
 
 .mainContainer {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 327px;
-  height: 552px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  padding-left: 10px;
-  padding-top: 10px;
+  align-items: flex-start;
+  padding: 16px 16px 0 16px;
+  gap: 12px;
+  color: #344563;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.snap_s {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.snap_s > img {
+  width: 100%;
 }
 
 .ddm {
@@ -133,11 +182,6 @@ textarea {
 
 .ddb {
   list-style: none;
-}
-
-.snap_s {
-  width: 295px;
-  height: 220px;
 }
 
 .name {
@@ -169,7 +213,14 @@ textarea {
   display: flex;
   padding: 4px 0;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 5%;
+  margin-top: 5%;
+  font-size: 15px;
+  color: #6070ff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 5%;
 }
 
 .link {
@@ -180,7 +231,7 @@ textarea {
   border-radius: 8px;
   text-decoration: none;
   cursor: pointer;
-  padding: 1% 3%;
+  padding: 4px 12px 4px 12px;
 }
 
 .link:hover {
@@ -195,29 +246,22 @@ textarea {
 
 .more {
   size: 20px;
+  width: 100px;
   line-height: 24px;
-  font-size: 17px;
-  padding: 2% 5%;
-  color: white;
-  border-radius: 8px;
+  font-size: 15px;
+  padding: 5px;
+  color: #396df2;
+  border-radius: 4px;
   border: 1px solid #396df2;
-  background-color: #396df2;
   margin-top: 5%;
   margin-bottom: 2%;
   cursor: pointer;
 }
 
 .more:hover {
-  size: 20px;
-  line-height: 24px;
-  font-size: 17px;
-  padding: 2% 5%;
   color: white;
-  border-radius: 8px;
   border: 1px solid #396df2;
-  background-color: #a1aaf6;
-  margin-top: 5%;
-  margin-bottom: 2%;
+  background: #4053fc;
   cursor: pointer;
 }
 
@@ -236,11 +280,18 @@ textarea {
 .entry {
   width: 90%;
   height: auto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
   color: #344563;
   margin-bottom: 5%;
+}
+
+.entry_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
 }
 
 .sm_links {
@@ -268,14 +319,13 @@ textarea {
 
 .mainContainerAboutmyself {
   box-sizing: border-box;
-  width: 327px;
+  width: 100%;
   height: auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
   text-align: center;
   align-items: center;
-  margin-bottom: 10%;
   padding: 0;
   flex-direction: column;
   justify-content: space-between;
@@ -305,7 +355,7 @@ textarea {
 }
 
 .lng {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: flex;
   font-size: 20px;
@@ -317,19 +367,18 @@ textarea {
 
 .dropdownButtons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
-  width: 80%;
   height: auto;
 }
 
 .buttonLink {
-  background: #f7f7f9;
+  background: #e5e5e5;
   border-radius: 8px;
   box-sizing: border-box;
   width: 70%;
-  height: 66px;
-  display: flex;
+  display: block;
+  padding: 0 10px;
   font-size: 15px;
   align-items: center;
   justify-content: flex-start;
@@ -343,7 +392,6 @@ textarea {
 }
 
 .background_image {
-  /* width: 327px; */
   height: auto;
   border-top-left-radius: 80px;
   display: flex;
@@ -380,7 +428,24 @@ textarea {
 }
 
 #get {
-  width: 130px;
+  size: 20px;
+  width: 180px;
+  line-height: 24px;
+  font-size: 17px;
+  padding: 2% 5%;
+  color: #396df2;
+  border-radius: 8px;
+  border: 1px solid #396df2;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+#get:hover {
+  color: white;
+  border: 1px solid #396df2;
+  background: #4053fc;
+  cursor: pointer;
 }
 
 .black_line {
@@ -395,4 +460,147 @@ textarea {
   background-color: #0d151e;
   margin-top: 32px;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 800px) {
+  * {
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  header {
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    padding-top: 58px;
+  }
+
+  .menu li {
+    padding-right: 3rem;
+    color: #344563;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    color: #344563;
+  }
+
+  .menu > div {
+    display: none;
+  }
+
+  .headline {
+    background-image: url(Images/Background\ img\ Desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-left: 20%;
+    align-self: center;
+    padding-top: 15%;
+    width: 100%;
+    border-bottom-left-radius: 120px;
+  }
+
+  /* Portfolio project Setup and mobile */
+
+  .secondPart {
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+  }
+
+  .mainContainer {
+    height: auto;
+    border: 1px solid #dfe1e6;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 50px;
+    margin: 0 10px;
+    width: 150%;
+  }
+
+  .mainContainer:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .snap_s {
+    width: 50%;
+  }
+
+  .info {
+    width: 50%;
+  }
+
+  .decription {
+    font-size: 16px;
+  }
+
+  .Name_info {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .mainContainerAboutmyself {
+    box-sizing: inherit;
+    border: 1px solid #dfe1e6;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 142px 185px 0 142px;
+    flex-direction: row;
+    border-top-right-radius: 120px;
+    gap: 40px;
+    background-color: white;
+    width: 100%;
+  }
+
+  .entry_info {
+    height: auto;
+    padding-bottom: 10%;
+  }
+
+  .frame {
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    padding: 5% 0;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .frame > img {
+    height: 20px;
+  }
+
+  .background_image {
+    border-top-left-radius: 120px;
+    padding: 142px 260px;
+    background-image: url("Images/Header_bg_ContactMe.svg");
+    background-size: 100%;
+  }
+
+  .inputButons {
+    text-align: center;
+  }
+
+  .black_line {
+    display: none;
+  }
 }
