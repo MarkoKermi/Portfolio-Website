@@ -439,20 +439,6 @@ textarea {
   width: 100%;
 }
 
-/*#get {
-  size: 20px;
-  width: 180px;
-  line-height: 24px;
-  font-size: 17px;
-  padding: 2% 5%;
-  color: #396df2;
-  border-radius: 8px;
-  border: 1px solid #396df2;
-  margin-top: 5%;
-  margin-bottom: 2%;
-  cursor: pointer;
-}*/
-
 .button-big {
   padding: 15px 20px;
   width: fit-content;
