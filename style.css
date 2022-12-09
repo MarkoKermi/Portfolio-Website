@@ -150,6 +150,12 @@ textarea {
   padding: 16px 16px 0 16px;
   gap: 12px;
   color: #344563;
+  transition: all 1.1s;
+}
+
+.mainContainer:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
 
 .info {
