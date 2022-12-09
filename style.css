@@ -49,7 +49,7 @@ textarea {
   height: 170px;
 }
 .background_img {
-  background-color: #e5e5e5
+  background-color: #e5e5e5;
 }
 .headline {
   background-image: url(Images/header-shapes\ mobile@2x.png);
@@ -60,7 +60,7 @@ textarea {
   padding: 148px 20px 20px 20px;
 }
 
-.top{
+.top {
   width: 95vw;
   height: auto;
   display: flex;
@@ -497,105 +497,106 @@ textarea {
     border-bottom-left-radius: 120px;
   }
 
-/* Portfolio project Setup and mobile */
+  /* Portfolio project Setup and mobile */
 
-.secondPart {
-  justify-content: center;
-  justify-items: center;
-  display: grid;
-}
+  .secondPart {
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+  }
 
-.mainContainer {
-  height: auto;
-  border: 1px solid #dfe1e6;
-  background-color: white;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 40px;
-  gap: 50px;
-  margin: 0 10px;
-  width: 150%;
-}
+  .mainContainer {
+    height: auto;
+    border: 1px solid #dfe1e6;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 50px;
+    margin: 0 10px;
+    width: 150%;
+  }
 
-.mainContainer:nth-child(even) {
-  flex-direction: row-reverse;
-}
+  .mainContainer:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 
-.snap_s {
-  width: 50%;
-}
+  .snap_s {
+    width: 50%;
+  }
 
-.info {
-  width: 50%;
-}
+  .info {
+    width: 50%;
+  }
 
-.decription {
-  font-size: 16px;
-}
+  .decription {
+    font-size: 16px;
+  }
 
-.Name_info {
-  font-size: 48px;
-  line-height: 60px;
-}
+  .Name_info {
+    font-size: 48px;
+    line-height: 60px;
+  }
 
-.mainContainerAboutmyself {
-  box-sizing: inherit;
-  border: 1px solid #dfe1e6;
-  display: flex;
-  text-align: left;
-  align-items: center;
-  padding: 142px 185px 0px 142px;
-  flex-direction: row;
-  border-top-right-radius: 120px;
-  gap: 40px;
-  background-color: white;
-  width: 100%;
-}
+  .mainContainerAboutmyself {
+    box-sizing: inherit;
+    border: 1px solid #dfe1e6;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 142px 185px 0px 142px;
+    flex-direction: row;
+    border-top-right-radius: 120px;
+    gap: 40px;
+    background-color: white;
+    width: 100%;
+  }
 
-.entry_info {
-  height: auto;
-  padding-bottom: 10%;
-}
+  .entry_info {
+    height: auto;
+    padding-bottom: 10%;
+  }
 
-.lng {
-  width: 80%;
-  height: auto;
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 1rem;
-}
+  .lng {
+    width: 80%;
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 1rem;
+  }
 
-.frame {
-  width: 80%;
-  height: auto;
-  display: flex;
-  font-size: 20px;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 5% 0;
-  border-bottom: 1px solid #dfe1e6;
-}
+  .frame {
+    width: 80%;
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5% 0;
+    border-bottom: 1px solid #dfe1e6;
+  }
 
-.frame > img {
-  height: 20px;
-}
+  .frame > img {
+    height: 20px;
+  }
 
-.background_image {
-  border-top-left-radius: 120px;
-  padding: 142px 260px;
-  background-image: url("Images/Header_bg_ContactMe.svg");
-  background-size: 100%;
-}
+  .background_image {
+    border-top-left-radius: 120px;
+    padding: 142px 260px;
+    background-image: url("Images/Header_bg_ContactMe.svg");
+    background-size: 100%;
+  }
 
-.inputButons {
-text-align: center;
-}
+  .inputButons {
+    text-align: center;
+  }
 
-.black_line {
-  display: none;
+  .black_line {
+    display: none;
+  }
 }
