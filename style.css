@@ -150,6 +150,12 @@ textarea {
   padding: 16px 16px 0 16px;
   gap: 12px;
   color: #344563;
+  transition: all 1.1s;
+}
+
+.mainContainer:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
 
 .info {
@@ -253,6 +259,7 @@ textarea {
   color: #396df2;
   border-radius: 4px;
   border: 1px solid #396df2;
+  background-color: white;
   margin-top: 5%;
   margin-bottom: 2%;
   cursor: pointer;
@@ -263,6 +270,11 @@ textarea {
   border: 1px solid #396df2;
   background: #4053fc;
   cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.more:active {
+  background-color: blue;
 }
 
 /* Portfolio section about myself */
@@ -427,25 +439,9 @@ textarea {
   width: 100%;
 }
 
-#get {
-  size: 20px;
-  width: 180px;
-  line-height: 24px;
-  font-size: 17px;
-  padding: 2% 5%;
-  color: #396df2;
-  border-radius: 8px;
-  border: 1px solid #396df2;
-  margin-top: 5%;
-  margin-bottom: 2%;
-  cursor: pointer;
-}
-
-#get:hover {
-  color: white;
-  border: 1px solid #396df2;
-  background: #4053fc;
-  cursor: pointer;
+.button-big {
+  padding: 15px 20px;
+  width: fit-content;
 }
 
 .black_line {
