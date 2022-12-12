@@ -38,6 +38,7 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
@@ -63,6 +64,14 @@ After you're finished please remove all the comments and instructions!
   > A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs
 - **[.gitignore]**
   > Specifies intentionally untracked files to ignore
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://markokermi.github.io/Portfolio-Website/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,6 +105,10 @@ Example commands:
 - GitHub: [@MarkoKermiciev](https://github.com/MarkoKermi)
 - Twitter: [@Marko Kermichiev](https://twitter.com/MarkoKerm)
 - LinkedIn: [Marko Kermiciev](https://www.linkedin.com/in/marko-kermichiev-78b1bb110/)
+
+👤 **Author 2**
+
+-GitHub: [@Anthony Martin] (https://github.com/anthonymr)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
