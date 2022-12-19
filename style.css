@@ -50,6 +50,48 @@ textarea {
   height: 170px;
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 25px 25px 15px 25px;
+}
+
+.top a {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.top #menu {
+  display: none;
+  position: absolute;
+  top: 10%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  left: 0;
+}
+
+.top #menu .nav-item {
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #3a4a42;
+  text-decoration: none;
+  margin: 40px;
+}
+
+.top nav .fa-bars {
+  font-size: 20px;
+  margin-right: 10px;
+  z-index: 999;
+}
+
 .background_img {
   background-color: #e5e5e5;
 }
