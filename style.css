@@ -56,6 +56,8 @@ textarea {
   align-items: center;
   align-content: center;
   padding: 25px 25px 15px 25px;
+  width: 95vw;
+  height: auto;
 }
 
 .top a {
@@ -103,14 +105,6 @@ textarea {
   background-color: white;
   border-bottom-left-radius: 80px;
   padding: 148px 20px 20px 20px;
-}
-
-.top {
-  width: 95vw;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
