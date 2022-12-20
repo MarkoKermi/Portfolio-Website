@@ -68,12 +68,13 @@ textarea {
 
 .top #menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 10%;
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
   left: 0;
 }
 
@@ -82,7 +83,7 @@ textarea {
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  color: #3a4a42;
+  color: white;
   text-decoration: none;
   margin: 40px;
 }
@@ -91,6 +92,7 @@ textarea {
   font-size: 20px;
   margin-right: 10px;
   z-index: 999;
+  /* background-color: #6070ff; */
 }
 
 .background_img {
@@ -523,6 +525,7 @@ textarea {
     justify-content: flex-end;
     height: auto;
     position: relative;
+    background-color: white;
   }
 
   .top #menu .nav-item {
@@ -530,6 +533,7 @@ textarea {
     font-weight: 500;
     line-height: 20px;
     margin-right: 10px;
+    color: black;
   }
 
   .headline {
