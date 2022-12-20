@@ -4,7 +4,7 @@
 * {
   font-family: "Popins", sans-serif;
   padding: 0%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 html,
@@ -515,21 +515,22 @@ textarea {
     padding-top: 58px;
   }
 
-  .menu li {
-    padding-right: 3rem;
-    color: #344563;
+  .top .fa-bars {
+    display: none;
   }
 
-  .menu ul {
+  .top #menu {
     display: flex;
     justify-content: flex-end;
-    list-style: none;
-    gap: 20px;
-    color: #344563;
+    height: auto;
+    position: relative;
   }
 
-  .menu > div {
-    display: none;
+  .top #menu .nav-item {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-right: 10px;
   }
 
   .headline {
