@@ -494,6 +494,81 @@ textarea {
   margin-bottom: 8px;
 }
 
+#detail {
+  background-color: #c1c7d0;
+  display: none;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.detail {
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 16px;
+  width: 343px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.detail #img {
+  width: 100%;
+  height: auto;
+}
+
+.detail #close {
+  position: absolute;
+  top: 4%;
+  right: 11%;
+  font-size: 25px;
+  color: #fff;
+  z-index: 99;
+}
+
+.detail #close:hover {
+  color: #091e42;
+}
+
+.detail .detail-caption .detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 10px;
+}
+
+.detail .detail-caption .tag {
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.detail .detail-caption .tag .desktop-tag {
+  display: none;
+}
+
+.detail .detail-text {
+  color: #344563;
+  line-height: 24px;
+}
+
+.detail .detail-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.detail .detail-button button {
+  padding: 12px 15px;
+}
+
+.detail .detail-button i {
+  margin-left: 10px;
+}
+
 @media screen and (min-width: 800px) {
   * {
     padding: 0%;
