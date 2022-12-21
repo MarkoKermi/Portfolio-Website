@@ -714,4 +714,50 @@ textarea {
   .black_line {
     display: none;
   }
+
+  #detail {
+    background-color: #c1c7d0;
+  }
+
+  .detail {
+    width: 920px;
+    border-radius: 8px;
+    margin: 122px auto;
+    padding: 78px 24px 44px 24px;
+  }
+
+  .detail #img {
+    border-radius: 8px;
+  }
+
+  .detail #close {
+    top: 2%;
+    right: 3%;
+    color: #67798e;
+    background: #ebecf0;
+    padding: 8px 12px;
+  }
+
+  .detail .detail-caption .detail-title {
+    max-width: 589px;
+  }
+
+  .detail .detail-caption .tag {
+    width: 500px;
+  }
+
+  .detail .detail-caption .tag .desktop-tag {
+    display: inline-block;
+  }
+
+  .detail .detail-button {
+    position: absolute;
+    top: 67%;
+    right: 2.5%;
+    gap: 12px;
+  }
+
+  .detail .detail-button button {
+    border-radius: 8px;
+  }
 }
