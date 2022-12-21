@@ -77,14 +77,14 @@ function openModal() {
   liveLink.href = project_popup.liveLink;
   sourceLink.href = project_popup.sourceLink;
   if (screenWidth < 768) {
-    img.setAttribute("src", project_popup.mobileImg);
+    img.setAttribute("src", project_popup.mobileImage);
     for (let i = 0; i < project_popup.mobileTech.length; i += 1) {
       const liTag = document.createElement("li");
       liTag.textContent = project_popup.mobileTech[i];
       modalTag.appendChild(liTag);
     }
   } else {
-    img.setAttribute("src", project_popup.desktopImg);
+    img.setAttribute("src", project_popup.desktopImage);
     for (let i = 0; i < project_popup.desktopTech.length; i += 1) {
       const liTag = document.createElement("li");
       liTag.textContent = project_popup.desktopTech[i];
@@ -100,7 +100,7 @@ function closeModal() {
   }
 }
 
-const project = [...document.querySelectorAll(".button")];
+const project = [...document.querySelectorAll(".more")];
 project.forEach((btn) => {
   btn.onclick = () => {
     openModal();
