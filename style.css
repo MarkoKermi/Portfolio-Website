@@ -526,7 +526,7 @@ textarea {
   top: 4%;
   right: 11%;
   font-size: 25px;
-  color: #67798E;
+  color: #67798e;
   z-index: 99;
 }
 
@@ -549,7 +549,7 @@ textarea {
 
 .detail #detail-tag li {
   list-style: circle;
-  color: #7A869A;
+  color: #7a869a;
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
@@ -570,13 +570,13 @@ textarea {
 
 .detail .detail-caption .tag li {
   list-style: none;
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .detail .detail-caption .detail-text {
@@ -592,9 +592,9 @@ textarea {
 
 .detail .detail-button button {
   padding: 14px 20px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
-  color: #396DF2;
+  color: #396df2;
   background-color: #fff;
   font-size: 15px;
   font-weight: 500;
