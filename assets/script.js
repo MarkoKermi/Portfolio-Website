@@ -69,7 +69,7 @@ const liveLink = document.querySelector("#live-link");
 const sourceLink = document.querySelector("#source-link");
 let screenWidth = window.innerWidth;
 window.onresize = () => {
-  let screenWidth = window.innerWidth;
+  screenWidth = window.innerWidth;
 };
 
 function openModal() {
