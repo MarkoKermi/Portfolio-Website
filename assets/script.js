@@ -26,7 +26,7 @@ menu.addEventListener("click", () => {
 
 // Popup Window code
 
-const project_popup = [
+const popupWindow = [
   {
     name: "Tonic",
     skillList: ["CANOPY", "Back End Dev", 2015],
@@ -41,14 +41,14 @@ const project_popup = [
   },
 ];
 
-project_popup.name = "Tonic";
-project_popup.skillList = ["CANOPY", "Back End Dev", 2015];
-project_popup.desktopImage = "Images/popup_window_desktopImg.png";
-project_popup.mobileImage = "Images/popup_window_mobImg.png";
-project_popup.description =
+popupWindow.name = "Tonic";
+popupWindow.skillList = ["CANOPY", "Back End Dev", 2015];
+popupWindow.desktopImage = "Images/popup_window_desktopImg.png";
+popupWindow.mobileImage = "Images/popup_window_mobImg.png";
+popupWindow.description =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-project_popup.mobileTech = ["html", "css", "javascript"];
-project_popup.desktopTech = [
+popupWindow.mobileTech = ["html", "css", "javascript"];
+popupWindow.desktopTech = [
   "html",
   "css",
   "javascript",
@@ -56,8 +56,8 @@ project_popup.desktopTech = [
   "ruby",
   "bootstrap",
 ];
-project_popup.liveVersionLink = "#";
-project_popup.sourceCodeLink = "#";
+popupWindow.liveVersionLink = "#";
+popupWindow.sourceCodeLink = "#";
 
 const detail = document.querySelector("#detail");
 const detailTitle = document.querySelector(".detail-title");
@@ -67,33 +67,34 @@ const detailTag = document.querySelector("#detail-tag");
 const modalTag = document.querySelector("#modal-tag");
 const liveLink = document.querySelector("#live-link");
 const sourceLink = document.querySelector("#source-link");
+let screenWidth = window.innerWidth;
 window.onresize = () => {
-  screenWidth = window.innerWidth;
+  let screenWidth = window.innerWidth;
 };
 
 function openModal() {
   detail.style.display = "block";
-  detailTitle.textContent = project_popup.name;
-  detailText.textContent = project_popup.description;
-  liveLink.href = project_popup.liveLink;
-  sourceLink.href = project_popup.sourceLink;
-  for (let i = 0; i < project_popup.skillList.length; i += 1) {
+  detailTitle.textContent = popupWindow.name;
+  detailText.textContent = popupWindow.description;
+  liveLink.href = popupWindow.liveLink;
+  sourceLink.href = popupWindow.sourceLink;
+  for (let i = 0; i < popupWindow.skillList.length; i += 1) {
     const li = document.createElement("li");
-    li.textContent = project_popup.skillList[i];
+    li.textContent = popupWindow.skillList[i];
     detailTag.appendChild(li);
   }
   if (screenWidth < 768) {
-    img.setAttribute("src", project_popup.mobileImage);
-    for (let i = 0; i < project_popup.mobileTech.length; i += 1) {
+    img.setAttribute("src", popupWindow.mobileImage);
+    for (let i = 0; i < popupWindow.mobileTech.length; i += 1) {
       const liTag = document.createElement("li");
-      liTag.textContent = project_popup.mobileTech[i];
+      liTag.textContent = popupWindow.mobileTech[i];
       modalTag.appendChild(liTag);
     }
   } else {
-    img.setAttribute("src", project_popup.desktopImage);
-    for (let i = 0; i < project_popup.desktopTech.length; i += 1) {
+    img.setAttribute("src", popupWindow.desktopImage);
+    for (let i = 0; i < popupWindow.desktopTech.length; i += 1) {
       const liTag = document.createElement("li");
-      liTag.textContent = project_popup.desktopTech[i];
+      liTag.textContent = popupWindow.desktopTech[i];
       modalTag.appendChild(liTag);
     }
   }
