@@ -3,16 +3,15 @@
 
 * {
   font-family: "Popins", sans-serif;
-  padding: 0%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  width: 100vw;
+  width: auto;
   height: auto;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 header {
@@ -168,7 +167,6 @@ textarea {
 
 .secondPart {
   display: grid;
-  grid-template: repeat (4, 1fr) /1fr;
   gap: 114px;
   padding: 114px 24px;
   background-color: #e5e5e5;
@@ -176,7 +174,7 @@ textarea {
 
 .mainContainer {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: white;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -287,7 +285,6 @@ textarea {
 }
 
 .more {
-  size: 20px;
   width: 100px;
   line-height: 24px;
   font-size: 15px;
@@ -494,6 +491,118 @@ textarea {
   margin-bottom: 8px;
 }
 
+#detail {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(8px);
+  background-color: transparent;
+}
+
+.detail {
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 16px;
+  width: 343px;
+  margin: 50px auto;
+  position: relative;
+  height: auto;
+}
+
+.detail #img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 12px 0;
+}
+
+.detail #close {
+  position: absolute;
+  top: 4%;
+  right: 11%;
+  font-size: 25px;
+  color: #67798e;
+  z-index: 99;
+}
+
+.detail #close:hover {
+  color: #091e42;
+}
+
+.detail .detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 10px;
+}
+
+.detail #detail-tag {
+  display: flex;
+  gap: 32px;
+}
+
+.detail #detail-tag li {
+  list-style: circle;
+  color: #7a869a;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.detail #detail-tag li:first-child {
+  color: #344563;
+  list-style: none;
+}
+
+.detail .detail-caption #modal-tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  max-width: 228px;
+}
+
+.detail .detail-caption #modal-tag li {
+  list-style: none;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #6070ff;
+}
+
+.detail .detail-caption .detail-text {
+  color: #344563;
+  line-height: 30px;
+}
+
+.detail .detail-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+}
+
+.detail .detail-button button {
+  padding: 14px 20px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.detail .detail-button i {
+  margin-left: 10px;
+}
+
 @media screen and (min-width: 800px) {
   * {
     padding: 0%;
@@ -637,5 +746,59 @@ textarea {
 
   .black_line {
     display: none;
+  }
+
+  #detail {
+    backdrop-filter: blur(8px);
+    background-color: transparent;
+  }
+
+  .detail {
+    width: 920px;
+    border-radius: 8px;
+    margin: 122px auto;
+    padding: 78px 24px 44px 24px;
+  }
+
+  .detail #img {
+    border-radius: 8px;
+    margin: 35px 0 55px 0;
+  }
+
+  .detail #close {
+    top: 2%;
+    right: 3%;
+    background: #ebecf0;
+    padding: 8px 12px;
+  }
+
+  .detail .detail-title {
+    max-width: 589px;
+  }
+
+  .detail #detail-tag li {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .detail .detail-caption {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .detail .detail-caption .detail-text {
+    width: 67%;
+  }
+
+  .detail .detail-caption .detail-flex {
+    width: 30%;
+  }
+
+  .detail .detail-button {
+    justify-content: space-between;
+  }
+
+  .detail .detail-button button {
+    padding: 10px 13px;
   }
 }
