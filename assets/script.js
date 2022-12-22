@@ -63,7 +63,7 @@ const detail = document.querySelector("#detail");
 const detailTitle = document.querySelector(".detail-title");
 const detailText = document.querySelector(".detail-text");
 const img = document.querySelector("#img");
-const detailTag = document.querySelector('#detail-tag');
+const detailTag = document.querySelector("#detail-tag");
 const modalTag = document.querySelector("#modal-tag");
 const liveLink = document.querySelector("#live-link");
 const sourceLink = document.querySelector("#source-link");
@@ -77,20 +77,20 @@ function openModal() {
   detailText.textContent = project_popup.description;
   liveLink.href = project_popup.liveLink;
   sourceLink.href = project_popup.sourceLink;
-  for ( let i = 0; i < project_popup.skillList.length; i += 1) {
-    const li = document.createElement('li');
+  for (let i = 0; i < project_popup.skillList.length; i += 1) {
+    const li = document.createElement("li");
     li.textContent = project_popup.skillList[i];
     detailTag.appendChild(li);
   }
   if (screenWidth < 768) {
-    img.setAttribute('src', project_popup.mobileImage);
+    img.setAttribute("src", project_popup.mobileImage);
     for (let i = 0; i < project_popup.mobileTech.length; i += 1) {
       const liTag = document.createElement("li");
       liTag.textContent = project_popup.mobileTech[i];
       modalTag.appendChild(liTag);
     }
   } else {
-    img.setAttribute('src', project_popup.desktopImage);
+    img.setAttribute("src", project_popup.desktopImage);
     for (let i = 0; i < project_popup.desktopTech.length; i += 1) {
       const liTag = document.createElement("li");
       liTag.textContent = project_popup.desktopTech[i];
@@ -109,7 +109,7 @@ function closeModal() {
   }
 }
 
-const project = [...document.querySelectorAll(".more")];
+const project = document.querySelectorAll(".more");
 project.forEach((btn) => {
   btn.onclick = () => {
     openModal();
