@@ -514,8 +514,13 @@ textarea {
   margin-bottom: 8px;
 }
 
+#error {
+  color: tomato;
+}
+
 #detail {
   position: fixed;
+  display: none;
   z-index: 9;
   left: 0;
   top: 0;

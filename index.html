@@ -297,7 +297,7 @@
     you need built or a project that needs cooding. I'd love to help with it.
       </p>
     </div>       
-    <form class="inputButons" action="https://formspree.io/f/xyyvrwnd" method="POST">
+    <form class="inputButons" action="https://formspree.io/f/xyyvrwnd" method="post" id="form">
       <input  type="text" 
               name="name" 
               placeholder="add your name" 
@@ -309,10 +309,9 @@
               name="email"
               required
               placeholder="Add your e-mail"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               id="email"
             />
-            <span class="error" id="error"></span>
+      <span id="error"></span>
       <textarea type="textarea" 
                 name="information_place" 
                 placeholder="Write your message here" 
