@@ -25,7 +25,6 @@ menu.addEventListener('click', () => {
 });
 
 // Popup Window code
-
 const popupWindow = [
   {
     name: 'Tonic',
@@ -119,4 +118,20 @@ project.forEach((btn) => {
 const close = document.querySelector('#close');
 close.onclick = () => {
   closeModal();
+};
+
+// Validation contact form
+
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const error = document.querySelector('#error');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
+    error.textContent = 'Please enter a valid email';
+  } else form.submit();
+});
+email.onkeypress = () => {
+  error.textContent = '';
 };

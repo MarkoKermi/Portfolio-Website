@@ -473,8 +473,30 @@ textarea {
 }
 
 .button-big {
-  padding: 15px 20px;
   width: fit-content;
+  width: 100px;
+  line-height: 24px;
+  font-size: 15px;
+  padding: 5px;
+  color: #396df2;
+  border-radius: 4px;
+  border: 1px solid #396df2;
+  background-color: white;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.button-big:hover {
+  color: white;
+  border: 1px solid #396df2;
+  background: #4053fc;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.button-big:active {
+  background-color: blue;
 }
 
 .black_line {
@@ -491,8 +513,13 @@ textarea {
   margin-bottom: 8px;
 }
 
+#error {
+  color: tomato;
+}
+
 #detail {
   position: fixed;
+  display: none;
   z-index: 9;
   left: 0;
   top: 0;

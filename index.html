@@ -258,7 +258,7 @@
           </li>
         </ul>
       </div>
-      <input type="button" class="more button-big" value="GET MY RESUME" >
+      <input type="button" class="button-big" value="GET MY RESUME" >
     </div>
     <div class="dropdownMenu" >
       <div class="lng"><div class="lng">Languages</div>
@@ -297,23 +297,26 @@
     you need built or a project that needs cooding. I'd love to help with it.
       </p>
     </div>       
-    <form class="inputButons" action="https://formspree.io/f/xyyvrwnd" method="POST">
+    <form class="inputButons" action="https://formspree.io/f/xyyvrwnd" method="post" id="form">
       <input  type="text" 
               name="name" 
               placeholder="add your name" 
-              required maxlength="30">
+              required maxlength="30"
+              id="name">
+              
       <input
               type="email"
               name="email"
               required
               placeholder="Add your e-mail"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              id="email"
             />
+      <span id="error"></span>
       <textarea type="textarea" 
                 name="information_place" 
                 placeholder="Write your message here" 
                 required maxlength="500"></textarea> 
-      <button  class="more button-big">Get It Touch</button>         
+      <button  class="button-big" type="submit">Get It Touch</button>         
   </form>
   <div class="black_line"> 
     <div></div>
