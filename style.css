@@ -749,7 +749,6 @@ textarea {
   }
 
   #detail {
-    /* background-color: #c1c7d0; */
     backdrop-filter: blur(8px);
     background-color: transparent;
   }
