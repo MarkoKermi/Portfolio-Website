@@ -167,7 +167,6 @@ textarea {
 
 .secondPart {
   display: grid;
-  grid-template: repeat (4, 1fr) /1fr;
   gap: 114px;
   padding: 114px 24px;
   background-color: #e5e5e5;
@@ -175,7 +174,7 @@ textarea {
 
 .mainContainer {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: white;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -286,7 +285,6 @@ textarea {
 }
 
 .more {
-  size: 20px;
   width: 100px;
   line-height: 24px;
   font-size: 15px;
@@ -518,7 +516,7 @@ textarea {
 .detail #img {
   width: 100%;
   height: auto;
-  margin: 20px 0px 12px 0px;
+  margin: 20px 0 12px 0;
 }
 
 .detail #close {
@@ -560,7 +558,7 @@ textarea {
   list-style: none;
 }
 
-.detail .detail-caption .tag {
+.detail .detail-caption #modal-tag {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -568,7 +566,7 @@ textarea {
   max-width: 228px;
 }
 
-.detail .detail-caption .tag li {
+.detail .detail-caption #modal-tag li {
   list-style: none;
   background: #ebebff;
   border-radius: 8px;
@@ -763,7 +761,7 @@ textarea {
 
   .detail #img {
     border-radius: 8px;
-    margin: 35px 0px 55px 0px;
+    margin: 35px 0 55px 0;
   }
 
   .detail #close {
@@ -794,9 +792,11 @@ textarea {
   .detail .detail-caption .detail-flex {
     width: 30%;
   }
+
   .detail .detail-button {
     justify-content: space-between;
   }
+
   .detail .detail-button button {
     padding: 10px 13px;
   }
