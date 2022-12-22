@@ -3,16 +3,15 @@
 
 * {
   font-family: "Popins", sans-serif;
-  padding: 0%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  width: 100vw;
+  width: auto;
   height: auto;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 header {
@@ -511,14 +510,15 @@ textarea {
   background-color: #fff;
   padding: 16px;
   width: 343px;
-  margin: 20px auto;
+  margin: 50px auto;
   position: relative;
-  height: 713px;
+  height: auto;
 }
 
 .detail #img {
   width: 100%;
   height: auto;
+  margin: 20px 0px 12px 0px;
 }
 
 .detail #close {
@@ -526,7 +526,7 @@ textarea {
   top: 4%;
   right: 11%;
   font-size: 25px;
-  color: #fff;
+  color: #67798E;
   z-index: 99;
 }
 
@@ -534,7 +534,7 @@ textarea {
   color: #091e42;
 }
 
-.detail .detail-caption .detail-title {
+.detail .detail-title {
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
@@ -542,28 +542,63 @@ textarea {
   margin-top: 10px;
 }
 
+.detail #detail-tag {
+  display: flex;
+  gap: 32px;
+}
+
+.detail #detail-tag li {
+  list-style: circle;
+  color: #7A869A;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.detail #detail-tag li:first-child {
+  color: #344563;
+  list-style: none;
+}
+
 .detail .detail-caption .tag {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 8px;
+  max-width: 228px;
 }
 
-.detail .detail-caption .tag .desktop-tag {
-  display: none;
+.detail .detail-caption .tag li {
+  list-style: none;
+  background: #EBEBFF;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #6070FF;
 }
 
-.detail .detail-text {
+.detail .detail-caption .detail-text {
   color: #344563;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .detail .detail-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 16px;
 }
 
 .detail .detail-button button {
-  padding: 12px 15px;
+  padding: 14px 20px;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+  color: #396DF2;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .detail .detail-button i {
@@ -728,36 +763,41 @@ textarea {
 
   .detail #img {
     border-radius: 8px;
+    margin: 35px 0px 55px 0px;
   }
 
   .detail #close {
     top: 2%;
     right: 3%;
-    color: #67798e;
     background: #ebecf0;
     padding: 8px 12px;
   }
 
-  .detail .detail-caption .detail-title {
+  .detail .detail-title {
     max-width: 589px;
   }
 
-  .detail .detail-caption .tag {
-    width: 500px;
+  .detail #detail-tag li {
+    font-size: 15px;
+    line-height: 20px;
   }
 
-  .detail .detail-caption .tag .desktop-tag {
-    display: inline-block;
+  .detail .detail-caption {
+    display: flex;
+    justify-content: space-between;
   }
 
+  .detail .detail-caption .detail-text {
+    width: 67%;
+  }
+
+  .detail .detail-caption .detail-flex {
+    width: 30%;
+  }
   .detail .detail-button {
-    position: absolute;
-    top: 67%;
-    right: 2.5%;
-    gap: 12px;
+    justify-content: space-between;
   }
-
   .detail .detail-button button {
-    border-radius: 8px;
+    padding: 10px 13px;
   }
 }
