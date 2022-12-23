@@ -135,3 +135,29 @@ form.addEventListener('submit', (event) => {
 email.onkeypress = () => {
   error.textContent = '';
 };
+
+// Local storage script
+
+const inputs = document.querySelectorAll('#name, #email, #message');
+const inputData = Array.from(inputs);
+const dataObj = {
+  Name: '',
+  Email: '',
+  Message: '',
+};
+inputData.forEach((input) => {
+  input.addEventListener('input', () => {
+    dataObj.Name = inputData[0].value;
+    dataObj.Email = inputData[1].value;
+    dataObj.Message = inputData[2].value;
+    localStorage.setItem('dataObj', JSON.stringify(dataObj));
+  });
+});
+window.onload = () => {
+  const data = JSON.parse(localStorage.getItem('dataObj'));
+  if (data) {
+    inputData[0].value = data.Name;
+    inputData[1].value = data.Email;
+    inputData[2].value = data.Message;
+  }
+};
